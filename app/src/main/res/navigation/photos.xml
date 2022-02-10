@@ -7,12 +7,12 @@
 
     <fragment
         android:id="@+id/photosFragment"
-        android:name="com.example.mediamonksexercise.presentation.ui.photos.PhotosFragment"
+        android:name="com.example.mediamonksexercise.presentation.ui.photos.photos_list.PhotosFragment"
         android:label="PhotosFragment"
         tools:layout="@layout/fragment_photos" />
     <fragment
         android:id="@+id/photoDetailsFragment"
-        android:name="com.example.mediamonksexercise.presentation.ui.photos.PhotoDetailsFragment"
+        android:name="com.example.mediamonksexercise.presentation.ui.photos.photo_details.PhotoDetailsFragment"
         android:label="PhotoDetailsFragment"
         tools:layout="@layout/fragment_photo_details" />
 </navigation>
