@@ -11,4 +11,7 @@
     <color name="textColor">#FFFFFF</color>
     <color name="backgroundPrimary">#282A2E</color>
     <color name="bottomNavigationBackground">#18191B</color>
+    <color name="backgroundRipple">#16000000</color>
+    <color name="gradientColor">#297209B7</color>
+    <color name="buttonBackground">#AC3DF5</color>
 </resources>
