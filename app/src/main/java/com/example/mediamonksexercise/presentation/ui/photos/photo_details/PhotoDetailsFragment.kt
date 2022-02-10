@@ -1,19 +1,29 @@
 package com.example.mediamonksexercise.presentation.ui.photos.photo_details
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.mediamonksexercise.R
+import androidx.fragment.app.Fragment
+import androidx.navigation.findNavController
+import com.example.mediamonksexercise.databinding.FragmentPhotoDetailsBinding
 
 class PhotoDetailsFragment : Fragment() {
+
+    private lateinit var binding: FragmentPhotoDetailsBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_photo_details, container, false)
+    ): View {
+        binding = FragmentPhotoDetailsBinding.inflate(layoutInflater, container, false)
+        setListeners()
+        return binding.root
+    }
+
+    private fun setListeners() {
+        binding.toolbar.setNavigationOnClickListener {
+            it.findNavController().navigateUp()
+        }
     }
 }

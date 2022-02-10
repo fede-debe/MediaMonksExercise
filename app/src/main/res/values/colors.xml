@@ -7,11 +7,14 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-
     <color name="textColor">#FFFFFF</color>
     <color name="backgroundPrimary">#282A2E</color>
     <color name="bottomNavigationBackground">#18191B</color>
     <color name="backgroundRipple">#16000000</color>
     <color name="gradientColor">#297209B7</color>
     <color name="buttonBackground">#AC3DF5</color>
+
+    <color name="topNavigationActionBackground">#313336</color>
+    <color name="buttonContentColor">#FFFFFF</color>
+    <color name="textColorAlbumItem">#87888A</color>
 </resources>
