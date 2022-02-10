@@ -29,4 +29,22 @@
         <item name="cardCornerRadius">16dp</item>
     </style>
 
+    <style name="TitlePhotoDetails">
+        <item name="android:fontFamily">@font/nunito_bold</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/textColor</item>
+    </style>
+
+    <style name="TitleAlbum">
+        <item name="android:fontFamily">@font/nunito_semi_bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/textColor</item>
+    </style>
+
+    <style name="TextAlbumItem">
+        <item name="android:fontFamily">@font/nunito_regular</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/textColorAlbumItem</item>
+    </style>
+
 </resources>

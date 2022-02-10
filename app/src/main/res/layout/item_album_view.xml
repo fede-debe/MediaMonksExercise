@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <data>
 
@@ -10,7 +12,88 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="20dp">
+
+        <ImageView
+            android:id="@+id/iv_image_album_holder"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:src="@drawable/iv_image_placeholder"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_album_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="5dp"
+            android:text="Title:"
+            android:textAppearance="@style/TitleAlbum"
+            app:layout_constraintStart_toEndOf="@id/iv_image_album_holder"
+            app:layout_constraintTop_toTopOf="@id/iv_image_album_holder" />
+
+        <TextView
+            android:id="@+id/tv_input_album_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="6dp"
+            android:textAppearance="@style/TextAlbumItem"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tv_album_title"
+            app:layout_constraintTop_toTopOf="@id/iv_image_album_holder"
+            tools:text="voluptatem aut maxime inventore" />
+
+        <TextView
+            android:id="@+id/tv_album_user_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="5dp"
+            android:text="User Id:"
+            android:textAppearance="@style/TitleAlbum"
+            app:layout_constraintBottom_toTopOf="@id/tv_album_detail_id"
+            app:layout_constraintStart_toEndOf="@id/iv_image_album_holder"
+            app:layout_constraintTop_toBottomOf="@id/tv_input_album_title" />
+
+        <TextView
+            android:id="@+id/tv_input_album_user_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="2dp"
+            android:textAppearance="@style/TextAlbumItem"
+            app:layout_constraintBottom_toTopOf="@id/tv_album_detail_id"
+            app:layout_constraintStart_toEndOf="@id/tv_album_user_id"
+            app:layout_constraintTop_toBottomOf="@id/tv_input_album_title"
+            tools:text="3" />
+
+        <TextView
+            android:id="@+id/tv_album_detail_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="5dp"
+            android:text="Id:"
+            android:textAppearance="@style/TitleAlbum"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/iv_image_album_holder"
+            app:layout_constraintTop_toBottomOf="@id/tv_album_user_id" />
+
+        <TextView
+            android:id="@+id/tv_input_album_detail_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:textAppearance="@style/TextAlbumItem"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tv_album_detail_id"
+            app:layout_constraintTop_toBottomOf="@id/tv_input_album_user_id"
+            tools:text="3" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
