@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.findNavController
 import com.example.mediamonksexercise.databinding.FragmentPhotoDetailsBinding
 
@@ -25,5 +26,12 @@ class PhotoDetailsFragment : Fragment() {
         binding.toolbar.setNavigationOnClickListener {
             it.findNavController().navigateUp()
         }
+
+        val application = requireNotNull(activity).application
+        val photo = PhotoDetailsFragmentArgs.fromBundle(requireArguments()).selectedPhoto
+        val viewModelFactory = PhotoDetailsViewModelFactory(photo, application)
+        binding.viewModel = ViewModelProvider(
+            this, viewModelFactory
+        )[PhotoDetailsViewModel::class.java]
     }
 }

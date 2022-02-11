@@ -7,7 +7,7 @@
 
         <variable
             name="item"
-            type="com.example.mediamonksexercise.domain.Photo" />
+            type="com.example.mediamonksexercise.domain.model.Photo" />
     </data>
 
     <com.google.android.material.card.MaterialCardView
@@ -26,6 +26,7 @@
                 android:adjustViewBounds="true"
                 android:padding="2dp"
                 android:scaleType="centerCrop"
+                app:bindImageUrl="@{item.thumbnailUrl}"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"

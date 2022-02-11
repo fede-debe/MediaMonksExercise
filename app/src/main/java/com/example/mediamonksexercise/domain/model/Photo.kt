@@ -1,4 +1,4 @@
-package com.example.mediamonksexercise.domain
+package com.example.mediamonksexercise.domain.model
 
 import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize

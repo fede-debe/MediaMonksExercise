@@ -3,6 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.example.mediamonksexercise.presentation.ui.photos.photo_details.PhotoDetailsViewModel" />
+    </data>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -35,6 +42,7 @@
             android:layout_height="296dp"
             android:layout_marginTop="32dp"
             android:scaleType="centerCrop"
+            app:bindImageUrl="@{viewModel.selectedPhoto.url}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tv_title_photo_details"
@@ -45,6 +53,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
+            android:text="@{viewModel.selectedPhoto.albumId}"
             android:textAppearance="@style/TitlePhotoDetails"
             app:layout_constraintStart_toStartOf="@id/guideline_start"
             app:layout_constraintTop_toBottomOf="@id/iv_photo_details_holder"
@@ -78,6 +87,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:paddingHorizontal="5dp"
+            android:text="@{viewModel.selectedPhoto.id}"
             android:textAppearance="@style/TitlePhotoDetails"
             app:layout_constraintEnd_toEndOf="@id/guideline_end"
             app:layout_constraintStart_toEndOf="@id/tv_id_photo_details"
