@@ -9,10 +9,18 @@
         android:id="@+id/photosFragment"
         android:name="com.example.mediamonksexercise.presentation.ui.photos.photos_list.PhotosFragment"
         android:label="PhotosFragment"
-        tools:layout="@layout/fragment_photos" />
+        tools:layout="@layout/fragment_photos">
+        <action
+            android:id="@+id/action_photosFragment_to_photoDetailsFragment"
+            app:destination="@id/photoDetailsFragment" />
+    </fragment>
     <fragment
         android:id="@+id/photoDetailsFragment"
         android:name="com.example.mediamonksexercise.presentation.ui.photos.photo_details.PhotoDetailsFragment"
         android:label="PhotoDetailsFragment"
-        tools:layout="@layout/fragment_photo_details" />
+        tools:layout="@layout/fragment_photo_details">
+        <argument
+            android:name="selectedPhoto"
+            app:argType="com.example.mediamonksexercise.domain.model.Photo" />
+    </fragment>
 </navigation>
