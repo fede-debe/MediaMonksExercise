@@ -3,16 +3,23 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2165" />
         <entry key="app/src/main/res/drawable-v24/ic_music.xml" value="0.2045" />
         <entry key="app/src/main/res/drawable-v24/ic_network_error.xml" value="0.2045" />
         <entry key="app/src/main/res/drawable/bg_gradient_top.xml" value="0.2045" />
         <entry key="app/src/main/res/drawable/gradient_toolbar.xml" value="0.2045" />
+        <entry key="app/src/main/res/drawable/ic_android_logo.xml" value="0.2165" />
         <entry key="app/src/main/res/drawable/ic_arrow_back.xml" value="0.2045" />
         <entry key="app/src/main/res/drawable/ic_loading_spinner.xml" value="0.2045" />
         <entry key="app/src/main/res/drawable/ic_music.xml" value="0.2045" />
+        <entry key="app/src/main/res/drawable/ic_music_outline.xml" value="0.2165" />
         <entry key="app/src/main/res/drawable/ic_network_error.xml" value="0.2045" />
+        <entry key="app/src/main/res/drawable/ic_photo.xml" value="0.2165" />
+        <entry key="app/src/main/res/drawable/ic_photo_outline.xml" value="0.2165" />
         <entry key="app/src/main/res/drawable/iv_image_placeholder.xml" value="0.2165" />
         <entry key="app/src/main/res/drawable/iv_profile_placeholder.xml" value="0.2045" />
+        <entry key="app/src/main/res/drawable/selector_music_icon.xml" value="0.2165" />
+        <entry key="app/src/main/res/drawable/selector_photo_icon.xml" value="0.2165" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.3651041666666667" />
         <entry key="app/src/main/res/layout/activity_start.xml" value="0.3651041666666667" />
         <entry key="app/src/main/res/layout/fragment_album.xml" value="0.35104166666666664" />
