@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">MediaMonksExercise</string>
+    <string name="title_photo_details">Title:</string>
+    <string name="album_id_photo_details">Album Id:</string>
+    <string name="id_photo_details">Id:</string>
+    <string name="title_start_fragment">Welcome to my latest app</string>
+    <string name="subtitle_fragment_start">Check the lists of albums and photos</string>
+    <string name="text_button">Show the collections</string>
+    <string name="title_album">Title:</string>
+    <string name="user_id_album">User Id:</string>
+    <string name="id_album">Id:</string>
+    <string name="photo_details_description">photo_details</string>
 </resources>

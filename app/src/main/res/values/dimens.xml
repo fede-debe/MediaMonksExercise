@@ -1,4 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Style UI Component -->
+    <dimen name="cornerRadiusButton">32dp</dimen>
+    <dimen name="paddingVerticalButton">18dp</dimen>
+    <dimen name="paddingHorizontalButton">24dp</dimen>
+    <dimen name="cardCornerRadius">17dp</dimen>
+    <dimen name="textSizeTitlePhotoDetails">18sp</dimen>
+    <dimen name="textSizeTitleAlbum">16sp</dimen>
+    <dimen name="textSizeAlbumItem">14sp</dimen>
+    <dimen name="sizeTextPhotoDetails">18sp</dimen>
+
+    <!-- Style Text -->
+    <dimen name="textSizeStartFragmentTitle">24sp</dimen>
+    <dimen name="textSizeStartFragmentSubTitle">18sp</dimen>
+    <dimen name="textSizeButtonText">16sp</dimen>
+    <dimen name="textSizeTitleBig">28sp</dimen>
+
+    <!-- Start Activity -->
+    <dimen name="heightStartActivity">0dp</dimen>
+
+    <!-- Main Activity -->
+    <dimen name="heightMainActivity">0dp</dimen>
+
+    <!-- Toolbar -->
+    <dimen name="elevationToolbar">1dp</dimen>
+    <dimen name="paddingTopToolbar">5dp</dimen>
+    <dimen name="paddingBottomToolbar">15dp</dimen>
+
+    <!-- Fragment Start -->
+    <dimen name="heightStartLayout">0dp</dimen>
+    <dimen name="paddingVerticalStartLayout">16dp</dimen>
+    <dimen name="marginTopIcon">178dp</dimen>
+    <dimen name="marginHorizontalTitle">100dp</dimen>
+    <dimen name="marginTopTitleStartFragment">24dp</dimen>
+    <dimen name="marginHorizontalSubtitle">30dp</dimen>
+    <dimen name="marginTopSubtitle">15dp</dimen>
+    <dimen name="marginHorizontalButton">24dp</dimen>
+    <dimen name="marginTopButton">120dp</dimen>
+
+    <!-- Fragment Album -->
+    <dimen name="widthHeightListAlbums">0dp</dimen>
+
+    <!-- Fragment Photos -->
+    <dimen name="widthHeightListPhotos">0dp</dimen>
+    <dimen name="paddingListPhotos">0dp</dimen>
     <dimen name="spacingCategory">8dp</dimen>
+
+    <!-- Fragment Photo Details -->
+    <dimen name="heightScrollView">0dp</dimen>
+    <dimen name="heightConstraintLayout">0dp</dimen>
+    <dimen name="paddingVerticalConstraintLayout">16dp</dimen>
+    <dimen name="marginTopTitle">32dp</dimen>
+    <dimen name="widthTitle">0dp</dimen>
+    <dimen name="paddingHorizontalTitle">3dp</dimen>
+    <dimen name="widthImageHolder">0dp</dimen>
+    <dimen name="heightImageHolder">296dp</dimen>
+    <dimen name="marginTopAlbumId">8dp</dimen>
+    <dimen name="widthAlbumId">0dp</dimen>
+    <dimen name="paddingHorizontalAlbumId">5dp</dimen>
+    <dimen name="marginTopId">8dp</dimen>
+    <dimen name="widthId">0dp</dimen>
+    <dimen name="paddingHorizontalId">5dp</dimen>
+    <dimen name="guidelineStartEnd">16dp</dimen>
+
+    <!-- Item Album View -->
+    <dimen name="paddingHorizontalLayout">24dp</dimen>
+    <dimen name="paddingVerticalLayout">20dp</dimen>
+    <dimen name="widthHeightAlbumImageHolder">44dp</dimen>
+    <dimen name="marginStartAlbumTitle">16dp</dimen>
+    <dimen name="marginTopAlbumTitle">5dp</dimen>
+    <dimen name="widthInputAlbumTitle">0dp</dimen>
+    <dimen name="marginStartInputAlbumTitle">8dp</dimen>
+    <dimen name="marginTopInputAlbumTitle">6dp</dimen>
+    <dimen name="marginStartAlbumUserId">16dp</dimen>
+    <dimen name="marginTopAlbumUserId">5dp</dimen>
+    <dimen name="marginStartInputAlbumUserId">8dp</dimen>
+    <dimen name="marginTopInputAlbumUserId">2dp</dimen>
+    <dimen name="marginStartAlbumDetailId">16dp</dimen>
+    <dimen name="marginTopAlbumDetailId">5dp</dimen>
+    <dimen name="marginStartInputAlbumDetailId">8dp</dimen>
+    <dimen name="marginTopInputAlbumDetailId">5dp</dimen>
+
+    <!-- Item Photo View -->
+    <dimen name="heightPhotoHolder">170dp</dimen>
+    <dimen name="paddingPhotoHolder">2dp</dimen>
+
 </resources>

@@ -3,27 +3,27 @@
 
     <style name="StartFragmentTitle">
         <item name="fontFamily">@font/nunito_bold</item>
-        <item name="android:textSize">24sp</item>
+        <item name="android:textSize">@dimen/textSizeStartFragmentTitle</item>
         <item name="android:gravity">center</item>
         <item name="android:textColor">@color/textColor</item>
     </style>
 
     <style name="StartFragmentSubTitle">
         <item name="fontFamily">@font/nunito_regular</item>
-        <item name="android:textSize">18sp</item>
+        <item name="android:textSize">@dimen/textSizeStartFragmentSubTitle</item>
         <item name="android:gravity">center</item>
         <item name="android:textColor">@color/textColor</item>
     </style>
 
     <style name="ButtonText">
         <item name="android:fontFamily">@font/nunito_bold</item>
-        <item name="android:textSize">16sp</item>
+        <item name="android:textSize">@dimen/textSizeButtonText</item>
         <item name="android:textColor">@color/textColor</item>
     </style>
 
     <style name="TitleBig">
         <item name="android:fontFamily">@font/nunito_bold</item>
-        <item name="android:textSize">28sp</item>
+        <item name="android:textSize">@dimen/textSizeTitleBig</item>
         <item name="android:textColor">@color/textColor</item>
     </style>
 

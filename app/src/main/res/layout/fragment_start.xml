@@ -18,14 +18,14 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:paddingVertical="16dp">
+                android:layout_height="@dimen/heightStartLayout"
+                android:paddingVertical="@dimen/paddingVerticalStartLayout">
 
                 <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/iv_logo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="178dp"
+                    android:layout_marginTop="@dimen/marginTopIcon"
                     app:layout_constraintBottom_toTopOf="@id/tv_title"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -37,9 +37,9 @@
                     style="@style/StartFragmentTitle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="100dp"
-                    android:layout_marginTop="24dp"
-                    android:text="Welcome to my latest app"
+                    android:layout_marginHorizontal="@dimen/marginHorizontalTitle"
+                    android:layout_marginTop="@dimen/marginTopTitleStartFragment"
+                    android:text="@string/title_start_fragment"
                     app:layout_constraintBottom_toTopOf="@id/tv_subtitle"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -50,9 +50,9 @@
                     style="@style/StartFragmentSubTitle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="30dp"
-                    android:layout_marginTop="15dp"
-                    android:text="Check the lists of albums and photos"
+                    android:layout_marginHorizontal="@dimen/marginHorizontalSubtitle"
+                    android:layout_marginTop="@dimen/marginTopSubtitle"
+                    android:text="@string/subtitle_fragment_start"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/tv_title" />
@@ -62,9 +62,9 @@
                     style="@style/Button"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="24dp"
-                    android:layout_marginTop="120dp"
-                    android:text="Show the collections"
+                    android:layout_marginHorizontal="@dimen/marginHorizontalButton"
+                    android:layout_marginTop="@dimen/marginTopButton"
+                    android:text="@string/text_button"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"

@@ -15,41 +15,41 @@
     <style name="Button" parent="Widget.MaterialComponents.Button">
         <item name="backgroundTint">@color/buttonBackground</item>
         <item name="android:textAppearance">@style/ButtonText</item>
-        <item name="cornerRadius">32dp</item>
+        <item name="cornerRadius">@dimen/cornerRadiusButton</item>
         <item name="android:stateListAnimator">@null</item>
-        <item name="android:paddingBottom">18dp</item>
-        <item name="android:paddingTop">18dp</item>
-        <item name="android:paddingStart">24dp</item>
-        <item name="android:paddingEnd">24dp</item>
+        <item name="android:paddingBottom">@dimen/paddingVerticalButton</item>
+        <item name="android:paddingTop">@dimen/paddingVerticalButton</item>
+        <item name="android:paddingStart">@dimen/paddingHorizontalButton</item>
+        <item name="android:paddingEnd">@dimen/paddingHorizontalButton</item>
     </style>
 
     <style name="Card" parent="Widget.MaterialComponents.CardView">
         <item name="cardBackgroundColor">@color/backgroundPrimary</item>
         <item name="rippleColor">@color/backgroundRipple</item>
-        <item name="cardCornerRadius">17dp</item>
+        <item name="cardCornerRadius">@dimen/cardCornerRadius</item>
     </style>
 
     <style name="TitlePhotoDetails">
         <item name="android:fontFamily">@font/nunito_bold</item>
-        <item name="android:textSize">18sp</item>
+        <item name="android:textSize">@dimen/textSizeTitlePhotoDetails</item>
         <item name="android:textColor">@color/textColor</item>
     </style>
 
     <style name="TitleAlbum">
         <item name="android:fontFamily">@font/nunito_semi_bold</item>
-        <item name="android:textSize">16sp</item>
+        <item name="android:textSize">@dimen/textSizeTitleAlbum</item>
         <item name="android:textColor">@color/textColor</item>
     </style>
 
     <style name="TextAlbumItem">
         <item name="android:fontFamily">@font/nunito_regular</item>
-        <item name="android:textSize">14sp</item>
+        <item name="android:textSize">@dimen/textSizeAlbumItem</item>
         <item name="android:textColor">@color/textColorAlbumItem</item>
     </style>
 
     <style name="TextPhotoDetails">
         <item name="android:fontFamily">@font/nunito_regular</item>
-        <item name="android:textSize">18sp</item>
+        <item name="android:textSize">@dimen/sizeTextPhotoDetails</item>
         <item name="android:textColor">@color/textColorAlbumItem</item>
     </style>
 
