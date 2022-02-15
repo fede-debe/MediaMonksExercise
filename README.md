@@ -2,7 +2,7 @@
 
 ## Description
 
-This project is an assignment from Media Monks where I need to display correctly some data I am fetching from a fake Api provided by [JSONPlaceholder](https://jsonplaceholder.typicode.com/)
+This project is an assignment from Media Monks. I created an App where I am displaying data which I am fetching from a fake Api provided by [JSONPlaceholder](https://jsonplaceholder.typicode.com/)
 
 This app demonstrates the following views and techniques:
 
