@@ -8,10 +8,11 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.mediamonksexercise.databinding.ItemPhotoViewBinding
 import com.example.mediamonksexercise.domain.model.Photo
 
-class PhotosAdapter(private val onClickListener: OnClickListener):
+class PhotosAdapter(private val onClickListener: OnClickListener) :
     ListAdapter<Photo, PhotosAdapter.PhotoViewHolder>(DiffCallback) {
 
-    class PhotoViewHolder(private var binding: ItemPhotoViewBinding): RecyclerView.ViewHolder(binding.root) {
+    class PhotoViewHolder(private var binding: ItemPhotoViewBinding) :
+        RecyclerView.ViewHolder(binding.root) {
         fun bind(photo: Photo) {
             binding.item = photo
             binding.executePendingBindings()

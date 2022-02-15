@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.mediamonksexercise.databinding.ItemAlbumViewBinding
 import com.example.mediamonksexercise.domain.model.Album
 
-class AlbumAdapter(private val onClickListener: OnClickListener) :
+class AlbumAdapter :
     ListAdapter<Album, AlbumAdapter.AlbumViewHolder>(DiffCallback) {
 
     class AlbumViewHolder(private var binding: ItemAlbumViewBinding) :
@@ -25,9 +25,6 @@ class AlbumAdapter(private val onClickListener: OnClickListener) :
 
     override fun onBindViewHolder(holder: AlbumViewHolder, position: Int) {
         val album = getItem(position)
-        holder.itemView.setOnClickListener {
-            onClickListener.onClick(album)
-        }
         holder.bind(album)
     }
 
@@ -39,9 +36,5 @@ class AlbumAdapter(private val onClickListener: OnClickListener) :
         override fun areContentsTheSame(oldItem: Album, newItem: Album): Boolean {
             return oldItem.id == newItem.id
         }
-    }
-
-    class OnClickListener(val clickListener: (album: Album) -> Unit) {
-        fun onClick(album: Album) = clickListener(album)
     }
 }

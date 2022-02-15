@@ -1,8 +1,10 @@
 package com.example.mediamonksexercise.data
 
-class ContentRemoteDataSource (
+import javax.inject.Inject
+
+class ContentRemoteDataSource @Inject constructor(
     private val contentService: ContentService
-): BaseRemoteDataSource() {
+) : BaseRemoteDataSource() {
 
     suspend fun getAlbums() = getResult { contentService.getAlbums() }
 
