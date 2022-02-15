@@ -7,6 +7,7 @@ This project is an assignment from Media Monks where I need to display correctly
 This app demonstrates the following views and techniques:
 
 * [Retrofit](https://square.github.io/retrofit/) to make api calls to an HTTP web service
+* [Dagger](https://dagger.dev/) as fully static, compile-time dependency injection framework for the project
 * [OkHttp](https://square.github.io/okhttp/) to support Retrofit as the client
 * [Moshi](https://github.com/square/moshi) which handles the deserialization of the returned JSON to Kotlin data objects 
 * [Coil](https://coil-kt.github.io/coil/) as image loading library for Android backed
