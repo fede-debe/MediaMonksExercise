@@ -12,8 +12,12 @@
         tools:layout="@layout/fragment_photos">
         <action
             android:id="@+id/action_photosFragment_to_photoDetailsFragment"
-            app:destination="@id/photoDetailsFragment" />
+            app:destination="@id/photoDetailsFragment"
+            app:enterAnim="@anim/slide_left"
+            app:popEnterAnim="@anim/wait_anim"
+            app:popExitAnim="@anim/slide_right" />
     </fragment>
+
     <fragment
         android:id="@+id/photoDetailsFragment"
         android:name="com.example.mediamonksexercise.presentation.ui.photos.photo_details.PhotoDetailsFragment"
