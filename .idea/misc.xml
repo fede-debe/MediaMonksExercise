@@ -11,6 +11,7 @@
         <entry key="app/src/main/res/drawable/ic_loading_spinner.xml" value="0.2045" />
         <entry key="app/src/main/res/drawable/ic_music.xml" value="0.2045" />
         <entry key="app/src/main/res/drawable/ic_network_error.xml" value="0.2045" />
+        <entry key="app/src/main/res/drawable/iv_image_placeholder.xml" value="0.2165" />
         <entry key="app/src/main/res/drawable/iv_profile_placeholder.xml" value="0.2045" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.3651041666666667" />
         <entry key="app/src/main/res/layout/activity_start.xml" value="0.3651041666666667" />

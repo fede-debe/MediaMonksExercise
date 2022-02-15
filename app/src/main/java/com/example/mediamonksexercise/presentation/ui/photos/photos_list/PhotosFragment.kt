@@ -22,7 +22,7 @@ class PhotosFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         binding = FragmentPhotosBinding.inflate(layoutInflater, container, false)
-        binding.lifecycleOwner = this
+        binding.lifecycleOwner = viewLifecycleOwner
         binding.viewModel = viewModel
         setListeners()
         setObservers()
