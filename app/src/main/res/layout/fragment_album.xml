@@ -20,13 +20,13 @@
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:elevation="1dp"
-                android:paddingTop="5dp"
-                android:paddingBottom="15dp"
+                android:elevation="@dimen/elevationToolbar"
+                android:paddingTop="@dimen/paddingTopToolbar"
+                android:paddingBottom="@dimen/paddingBottomToolbar"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:title="Albums"
+                app:title="Album"
                 app:titleTextAppearance="@style/TitleBig"
                 app:titleTextColor="@color/textColor" />
 
@@ -34,8 +34,8 @@
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_list_albums"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
+            android:layout_width="@dimen/widthHeightListAlbums"
+            android:layout_height="@dimen/widthHeightListAlbums"
             android:clipToPadding="false"
             app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
             app:layout_constraintBottom_toBottomOf="parent"

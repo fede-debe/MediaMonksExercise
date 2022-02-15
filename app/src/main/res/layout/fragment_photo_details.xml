@@ -27,33 +27,33 @@
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="@dimen/heightScrollView"
             android:fillViewport="true"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@id/toolbar">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:paddingVertical="16dp">
+                android:layout_height="@dimen/heightConstraintLayout"
+                android:paddingVertical="@dimen/paddingVerticalConstraintLayout">
 
-                <TextView
+                <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/tv_photo_details"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="32dp"
-                    android:text="Title: "
+                    android:layout_marginTop="@dimen/marginTopTitle"
+                    android:text="@string/title_photo_details"
                     android:textAppearance="@style/TitlePhotoDetails"
                     app:layout_constraintEnd_toStartOf="@id/tv_title_photo_details"
                     app:layout_constraintStart_toStartOf="@id/guideline_start"
                     app:layout_constraintTop_toBottomOf="@id/iv_photo_details_holder" />
 
-                <TextView
+                <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/tv_title_photo_details"
-                    android:layout_width="0dp"
+                    android:layout_width="@dimen/widthTitle"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="32dp"
-                    android:paddingHorizontal="3dp"
+                    android:layout_marginTop="@dimen/marginTopTitle"
+                    android:paddingHorizontal="@dimen/paddingHorizontalTitle"
                     android:text="@{item.title}"
                     android:textAppearance="@style/TextPhotoDetails"
                     app:layout_constraintEnd_toEndOf="@id/guideline_end"
@@ -63,8 +63,8 @@
 
                 <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/iv_photo_details_holder"
-                    android:layout_width="0dp"
-                    android:layout_height="296dp"
+                    android:layout_width="@dimen/widthImageHolder"
+                    android:layout_height="@dimen/heightImageHolder"
                     android:scaleType="centerCrop"
                     app:bindImageUrl="@{item.url}"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -72,22 +72,22 @@
                     app:layout_constraintTop_toTopOf="parent"
                     tools:src="@tools:sample/backgrounds/scenic" />
 
-                <TextView
+                <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/tv_album_id_photo_details"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:text="Album Id:"
+                    android:layout_marginTop="@dimen/marginTopAlbumId"
+                    android:text="@string/album_id_photo_details"
                     android:textAppearance="@style/TitlePhotoDetails"
                     app:layout_constraintStart_toStartOf="@id/guideline_start"
                     app:layout_constraintTop_toBottomOf="@id/tv_title_photo_details" />
 
-                <TextView
+                <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/tv_album_id_photo"
-                    android:layout_width="0dp"
+                    android:layout_width="@dimen/widthAlbumId"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:paddingHorizontal="5dp"
+                    android:layout_marginTop="@dimen/marginTopAlbumId"
+                    android:paddingHorizontal="@dimen/paddingHorizontalAlbumId"
                     android:text="@{Integer.toString(item.albumId)}"
                     android:textAppearance="@style/TextPhotoDetails"
                     app:layout_constraintEnd_toEndOf="@id/guideline_end"
@@ -95,22 +95,22 @@
                     app:layout_constraintTop_toBottomOf="@id/tv_title_photo_details"
                     tools:text="1" />
 
-                <TextView
+                <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/tv_id_photo_details"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:text="Id:"
+                    android:layout_marginTop="@dimen/marginTopId"
+                    android:text="@string/id_photo_details"
                     android:textAppearance="@style/TitlePhotoDetails"
                     app:layout_constraintStart_toStartOf="@id/guideline_start"
                     app:layout_constraintTop_toBottomOf="@id/tv_album_id_photo_details" />
 
-                <TextView
+                <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/tv_album_id"
-                    android:layout_width="0dp"
+                    android:layout_width="@dimen/widthId"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:paddingHorizontal="5dp"
+                    android:layout_marginTop="@dimen/marginTopId"
+                    android:paddingHorizontal="@dimen/paddingHorizontalId"
                     android:text="@{Integer.toString(item.id)}"
                     android:textAppearance="@style/TextPhotoDetails"
                     app:layout_constraintEnd_toEndOf="@id/guideline_end"
@@ -123,14 +123,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    app:layout_constraintGuide_begin="16dp" />
+                    app:layout_constraintGuide_begin="@dimen/guidelineStartEnd" />
 
                 <androidx.constraintlayout.widget.Guideline
                     android:id="@+id/guideline_end"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    app:layout_constraintGuide_end="16dp" />
+                    app:layout_constraintGuide_end="@dimen/guidelineStartEnd" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
