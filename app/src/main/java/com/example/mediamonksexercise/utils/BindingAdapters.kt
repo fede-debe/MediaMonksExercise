@@ -33,7 +33,7 @@ fun apiResponseStatus(imageView: ImageView, status: Resource.Status?) {
             imageView.setImageResource(R.drawable.ic_network_error)
         }
         else -> {
-            imageView.showSnackBar(R.string.something_went_wrong)
+//            imageView.showSnackBar(R.string.app_name)
         }
     }
 }
